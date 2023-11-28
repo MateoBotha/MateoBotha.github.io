@@ -1,0 +1,55 @@
+:root {
+    --heading-colour: #E6EDF3;
+    --subheading-colour: #7D8590;
+    --paragraph-colour: #D8EDE5;
+    --background-colour: #0D1117;
+    --fontType: Arial;    
+
+    --note-colour: #a32121;
+    --note-text-colour: var(--paragraph-colour); /* I may change it in the futre but for now they are the same */
+    --note-background-colour: #72323244;
+}
+body {
+    background-color: var(--background-colour);
+}
+#container {
+    display: flex;
+}
+#website-text-container {
+    margin: 50px;
+    float: left;
+    width: 50%;
+}
+#otherSites {
+    flex: 1;
+    margin: 50px;
+}
+h1 {
+    color: var(--heading-colour);
+    font-family: var(--fontType);
+}
+h2 {
+    color: var(--subheading-colour);
+    font-family: var(--fontType);
+}
+.noUnderline {
+    text-decoration: none;
+    color: blue;
+    font-family: var(--fontType);
+}
+.note {
+    background-color: var(--note-background-colour);
+    padding: 25px;
+    border-left: 10px solid var(--note-colour);
+    border-radius: 5px;
+    color: var(--note-text-colour);
+    display: inline-block; /*to make it fit the container div*/
+    font-family: var(--fontType);
+}
+.noteMain {
+    color: var(--note-colour);
+}
+p {
+    color: var(--paragraph-colour);
+    font-family: var(--fontType);
+}
