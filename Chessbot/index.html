@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess</title>
-    <link rel="stylesheet" href="lightMode.css"id="lightMode" disabled>
+    <link rel="stylesheet" href="lightMode.css"id="lightMode">
     <link rel="stylesheet" href="darkMode.css" id="darkMode">
     <script src="scrypt.js"></script>
+    
+    <nav class="navbar">
+        <h1 id="nav-title"><a href="https://mateobotha.github.io" class="noUnderline">Downloader</a></h1> <!--Mabybe make this a link to mateobotha.github.io? Instead of just the title?-->
+        <!--I plan to make it rather: Settings, instead of Switch to light mode... However, there isn't many settings yet and this is an early version, so it is fine.-->
+        <!--Maybe I should have an icon for switching modes and a hamberger menu or settings icon or something else... This is early stages still-->
+        <div class="nav-menu">
+                <a href="#" class="nav-link" id="toggleViewModes">Switch to Light-Mode</a>
+                <a href="https://www.github.com/MateoBotha" class="nav-link" class="linkToAccount">My Github profile</a>
+                <a href="#" class="nav-link">About</a> <!--Maybe about this repo-->
+                <a href="#" class="nav-link">My Main Website</a> <!--Add my website link here-->
+        </div>
+    </nav>
 </head>
 <body>
     <div id="container">  
         <div id="website-text-container">
-            <h1>This window is for downloading the latest Code for the <span id="programName">Chess Engine</span>.</h1>
-            <h2>You can now use this site to easily download all of <a href="https://www.github.com/MateoBotha" class="noUnderline" id="linkToAccount">@MateoBotha</a>'s Github code</h2>
+            <h1>This window is for downloading the latest Code for the <span class="programName">Chess Engine</span>.</h1>
+            <h2>You can now use this site to easily download all of <a href="https://www.github.com/MateoBotha" class="noUnderline" class="linkToAccount">@MateoBotha</a>'s Github code</h2>
             <p>
-                The downlaod and installation process has been made many times easier thanks to this website! However, if you do want to
+                The download and installation process has been made many times easier thanks to this website! However, if you do want to
                 download it without using this website, then I'd recommend you doing so! After all this website is made to make it easier 
-                and it isn't a neccesity. So, you can head on over to my <a href="https://www.github.com/MateoBotha/Java-Chessbot" class="noUnderline" id="linkToRepo">Github repository</a>
+                and it isn't a necessity. So, you can head on over to my <a href="https://www.github.com/MateoBotha/Java-Chessbot" class="noUnderline" class="linkToRepo">Github repository</a>
                 and do the download and installation there.
             </p>
             <br>
@@ -31,11 +43,14 @@
             </div>
             <br>
             <br>
-            <a href="https://github.com/MateoBotha/Java-Chessbot/archive/refs/tags/0.0.1-alpha.1.zip" class="noUnderline" id="downloadLink">Downlaod the latest Chess file (.zip)</a>
+            <div  id="downloadSection">
+                <a href="#" class="noUnderline" id="downloadLatestLink">Downlaod the latest Chess file (.zip)</a> <br id="spacebetweenDownloadLinks">
+                <a href="#" class="noUnderline" id="downloadPreLink">Download the latest prerelease Chess file (.zip)</a>
+            </div>
         </div>
         <div id="otherSites">
             <h2>Other sites you may like:</h2>
-            <p id="listOfSites">Loading... If you don't see anything for awhile, then there is an issue... Feel free to post one on this sites <a href="https://github.com/MateoBotha/MateoBotha.github.io/issues" class="noUnderline">Github repository's issue page</a>. <br><br>If that link didn't work then it was changed since I coded it... Unfortunatly since this didn't load we can't update the link as the API to the repo isn't working...</p>
+            <p class="listOfSites">Loading... If you don't see anything for awhile, then there is an issue... Feel free to post one on this sites <a href="https://github.com/MateoBotha/MateoBotha.github.io/issues" class="noUnderline">Github repository's issue page</a>. <br><br>If that link didn't work then it was changed since I coded it... Unfortunatly since this didn't load we can't update the link as the API to the repo isn't working...</p>
         </div>
     </div>
 </body>

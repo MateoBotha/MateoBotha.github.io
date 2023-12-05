@@ -1,17 +1,108 @@
 :root {
+    /*This is the colour infomation for the whole website, this is the only diffrence between light and dark m*/
+    --heading-colour: #2e353b;
+    --subheading-colour: #7D8590;
+    --paragraph-colour: #445750;
+    --background-colour: #f8fbff;
+    --fontType: Arial;
+    --navFontColour: #35443e;
+    --navBorderColour: #303030;
+    --link-colour: blue;
+
+    /*Note colours*/
     --note-colour: #a32121;
+    --note-text-colour: var(--paragraph-colour); /* I may change it in the futre but for now they are the same */
     --note-background-colour: #72323244;
+
+    --otherSitesBackgroundColourMobile: var(--background-colour); /*this will only be used when we are drawing it for mobile devices, and will be notging for now*/
+}
+html {
+    font-family: var(--fontType);
+}
+body {
+    background-color: var(--background-colour);
+}
+#container {
+    display: flex;
+}
+#website-text-container {
+    margin: 50px;
+    float: left;
+    width: 50%;
+}
+#otherSites {
+    flex: 1;
+    margin: 50px;
 }
 h1 {
-    text-align: center;
-    position: relative;
+    color: var(--heading-colour);
+    
 }
-#note {
+h2 {
+    color: var(--subheading-colour);
+    
+}
+.noUnderline {
+    text-decoration: none;
+    color: var(--link-colour);
+    
+}
+.note {
     background-color: var(--note-background-colour);
     padding: 25px;
     border-left: 10px solid var(--note-colour);
     border-radius: 5px;
+    color: var(--note-text-colour);
+    display: inline-block; /*to make it fit the container div*/
+    
 }
-#noteMain {
+.noteMain {
     color: var(--note-colour);
 }
+p {
+    color: var(--paragraph-colour);
+    
+}
+
+.navbar {
+    display: flex;
+}
+.nav-menu {
+    height: fit-content;
+    width: fit-content;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link {
+    text-decoration: none;
+    color: var(--navFontColour);
+    padding: 10px;
+    border: var(--navBorderColour) solid 3px;
+    border-radius: 10px;
+}
+#nav-title {
+    float: left;
+    width: 50%;
+}
+@media only screen and (max-width: 600px) {
+    #website-text-container {
+      margin: 0 !important;
+      float: none !important;
+      width: 100% !important;
+    }
+    #container {
+        display: block !important;
+    }
+    #otherSites {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 0 !important;
+        margin-top: 100px !important;
+        flex: none !important;
+
+        text-align: center !important;
+        background-color: var(--otherSitesBackgroundColourMobile) !important;   
+    }
+  }
+  

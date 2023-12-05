@@ -1,13 +1,13 @@
 :root {
-    /*This is the colour infomation for the whole website, this is the only diffrence between light and dark mode*/
-    --heading-colour: #E6EDF3;
+    /*This is the colour infomation for the whole website, this is the only diffrence between light and dark m*/
+    --heading-colour: #2e353b;
     --subheading-colour: #7D8590;
-    --paragraph-colour: #D8EDE5;
-    --background-colour: #0D1117;
+    --paragraph-colour: #445750;
+    --background-colour: #f8fbff;
     --fontType: Arial;
-    --navFontColour: #D8EDE5;
-    --navBorderColour: #cfcfcf;
-    --link-colour: #0040c9;
+    --navFontColour: #35443e;
+    --navBorderColour: #303030;
+    --link-colour: blue;
 
     /*Note colours*/
     --note-colour: #a32121;
@@ -22,16 +22,7 @@ html {
 body {
     background-color: var(--background-colour);
 }
-#container {
-    display: flex;
-}
 #website-text-container {
-    margin: 50px;
-    float: left;
-    width: 50%;
-}
-#otherSites {
-    flex: 1;
     margin: 50px;
 }
 h1 {
@@ -85,23 +76,4 @@ p {
     float: left;
     width: 50%;
 }
-@media only screen and (max-width: 600px) {
-    #website-text-container {
-      margin: 0 !important;
-      float: none !important;
-      width: 100% !important;
-    }
-    #container {
-        display: block !important;
-    }
-    #otherSites {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        margin-bottom: 0 !important;
-        margin-top: 100px !important;
-        flex: none !important;
-
-        text-align: center !important;
-        background-color: var(--otherSitesBackgroundColourMobile) !important;   
-    }
-  }
+  

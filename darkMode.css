@@ -22,21 +22,11 @@ html {
 body {
     background-color: var(--background-colour);
 }
-#container {
-    display: flex;
-}
 #website-text-container {
-    margin: 50px;
-    float: left;
-    width: 50%;
-}
-#otherSites {
-    flex: 1;
     margin: 50px;
 }
 h1 {
-    color: var(--heading-colour);
-    
+    color: var(--heading-colour);  
 }
 h2 {
     color: var(--subheading-colour);
@@ -85,23 +75,3 @@ p {
     float: left;
     width: 50%;
 }
-@media only screen and (max-width: 600px) {
-    #website-text-container {
-      margin: 0 !important;
-      float: none !important;
-      width: 100% !important;
-    }
-    #container {
-        display: block !important;
-    }
-    #otherSites {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        margin-bottom: 0 !important;
-        margin-top: 100px !important;
-        flex: none !important;
-
-        text-align: center !important;
-        background-color: var(--otherSitesBackgroundColourMobile) !important;   
-    }
-  }
